@@ -1,0 +1,18 @@
+<head>
+    <meta charset="UTF-8">
+    <title>Input Smarty Register</title>
+</head>
+
+    <form action="" method="post">
+        {{ form.hidden_tag() }}
+        <p>
+            {{ form.registerno.label }}<br>
+            {{ form.registerno(size=10) }}<br>
+        </p>
+
+        <p>{{ form.submit() }}</p>
+    </form>
+
+<p>
+    Register Value = {{ currentVal }}!
+</p>

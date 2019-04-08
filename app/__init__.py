@@ -6,6 +6,8 @@ from flask import Flask
 # resources such as template files
 app = Flask(__name__)
 
+app.secret_key = 'tomsverylongsecretkey'
+
 # Important -
 # the routes module is imported at the bottom and not at the top of the script as it is always done. The bottom
 # import is a workaround to circular imports, a common problem with Flask applications. You are going to see that
@@ -13,3 +15,4 @@ app = Flask(__name__)
 #  at the bottom avoids the error that results from the mutual references between these two files.
 from app import hello
 from app import hello2
+from app import routes
