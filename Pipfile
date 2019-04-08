@@ -1,0 +1,25 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+click = "*"
+flask = "*"
+flask-wtf = "*"
+jinja2 = "*"
+markupsafe = "*"
+wtforms = "*"
+werkzeug = "*"
+gunicorn = "*"
+itsdangerous = "*"
+pip = "*"
+pymodbus = "*"
+pyserial = "*"
+setuptools = "*"
+six = "*"
+
+[requires]
+python_version = "3.7"
